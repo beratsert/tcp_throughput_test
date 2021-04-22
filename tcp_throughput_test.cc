@@ -15,9 +15,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
- * Program report the total throughput received during a window of 100ms.
- * The user can specify the application data rate, number of stations in the network and choose the variant
- * of TCP i.e. congestion control algorithm to use.
+ *Program reports station-wise WiFi metrics. The user can specify the
+ *application data rate, the number of stations in the network, tcp socket 
+ *sizes and the variant of TCP i.e. congestion control algorithm to use.
  */
 
 #include "ns3/command-line.h"
@@ -57,7 +57,6 @@ CalculateThroughput ()
   Simulator::Schedule (MilliSeconds (100), &CalculateThroughput);
 }
 
-int
 main (int argc, char *argv[])
 {
   uint32_t payloadSize = 1472;                       /* Transport layer payload size in bytes. */
