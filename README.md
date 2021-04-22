@@ -1,2 +1,2 @@
 # tcp_throughput_test
-Program report the total throughput. The user can specify the application data rate, number of stations in the network, tcp socket sizes and choose the variant of TCP i.e. congestion control algorithm to use.
+Program reports Wi-Fi performance metrics. The user can specify the application data rate, the number of stations in the network, tcp socket sizes and the variant of TCP i.e. congestion control algorithm to use.
